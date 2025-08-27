@@ -80,6 +80,8 @@ for char in input_stream:
     # error
     elif state == "ERROR":
         output.write(
-            'Lexical Error reading character "' + input_stream[index - 1] + '"\n'
+            'Lexical Error reading character "'
+            + input_stream[index - 1].encode("unicode_escape").decode()
+            + '"\n'
         )
         exit()
