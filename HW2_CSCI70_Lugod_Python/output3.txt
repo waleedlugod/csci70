@@ -12,4 +12,3 @@ MINUS	-
 NUM	32
 PLUS	+
 NUM	23443234
-Lexical Error reading character "\n"

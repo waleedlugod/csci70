@@ -81,6 +81,7 @@ for char in input_stream:
     elif state == "ERROR":
         output.write(
             'Lexical Error reading character "'
+            # convert escape whitespace (tab/newline) to text
             + input_stream[index - 1].encode("unicode_escape").decode()
             + '"\n'
         )
